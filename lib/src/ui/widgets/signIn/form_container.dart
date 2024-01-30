@@ -54,13 +54,13 @@ class _FromCondainerWidgetState extends State<FromCondainerWidget> {
               fillColor: Colors.white,
               focusedBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(10.0),
-                borderSide: BorderSide(
+                borderSide: const BorderSide(
                   color: Color.fromARGB(255, 206, 0, 58),
                 ),
               ),
               enabledBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(10.0),
-                borderSide: BorderSide(
+                borderSide: const BorderSide(
                   color: Color.fromARGB(255, 92, 92, 92),
                   width: 0.5,
                 ),
@@ -80,8 +80,9 @@ class _FromCondainerWidgetState extends State<FromCondainerWidget> {
                 child: widget.isPasswordField == true
                     ? Icon(
                         _obscureText ? Icons.visibility_off : Icons.visibility,
-                        color:
-                            _obscureText == false ? Colors.blue : Colors.grey,
+                        color: _obscureText == false
+                            ? const Color.fromARGB(206, 243, 33, 33)
+                            : Colors.grey,
                       )
                     : const Text(' '),
               )),
