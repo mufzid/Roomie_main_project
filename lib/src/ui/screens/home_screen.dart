@@ -37,16 +37,15 @@ class HomeScreen extends StatelessWidget {
               text: 'profile',
             ),
           ]),
-      body: SafeArea(
-          child: SingleChildScrollView(
+      body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: Container(
-          color: const Color.fromARGB(255, 252, 247, 247),
+          color: const Color.fromARGB(255, 241, 244, 248),
           padding: const EdgeInsets.symmetric(horizontal: 10),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Gap(20),
+              const Gap(60),
               const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -56,15 +55,15 @@ class HomeScreen extends StatelessWidget {
                   )
                 ],
               ),
-              const Gap(30),
+              const Gap(10),
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: SearchBar(
                     hintText: '   Search here...',
                     hintStyle:
                         const MaterialStatePropertyAll(TextStyle(fontSize: 15)),
-                    backgroundColor:
-                        const MaterialStatePropertyAll<Color>(Colors.white),
+                    backgroundColor: const MaterialStatePropertyAll<Color>(
+                        Color.fromARGB(255, 255, 255, 255)),
                     padding: const MaterialStatePropertyAll(
                         EdgeInsetsDirectional.all(8)),
                     trailing: <Widget>[
@@ -81,12 +80,12 @@ class HomeScreen extends StatelessWidget {
                               )))
                     ]),
               ),
-              const Gap(20),
+              const Gap(10),
               const Text(
                 'Popular Cities',
                 style: TextStyle(fontSize: 21, fontWeight: FontWeight.w700),
               ),
-              const Gap(20),
+              const Gap(15),
               const SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
@@ -143,7 +142,7 @@ class HomeScreen extends StatelessWidget {
             ],
           ),
         ),
-      )),
+      ),
     );
   }
 }

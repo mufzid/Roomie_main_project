@@ -12,8 +12,7 @@ class CityCard extends StatelessWidget {
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(15),
             image: const DecorationImage(
-                fit: BoxFit.cover,
-                image: AssetImage('asset/images/kochi.jpeg'))),
+                fit: BoxFit.cover, image: AssetImage('asset/images/bng.jpg'))),
         width: 170,
         height: 170,
         child: Column(
@@ -27,7 +26,7 @@ class CityCard extends StatelessWidget {
                 color: Color.fromARGB(255, 0, 0, 0),
               ),
               child: const Text(
-                'Kochi',
+                'Bengalore',
                 style: TextStyle(color: Colors.white),
               ),
             ),
